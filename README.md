@@ -7,6 +7,12 @@ To install dependencies, run:
 
     npm install
 
+This command will:
+
+* Install required server node modules
+* Run the local version of bower to install the client bower modules
+* Run the r.js optimizer on the main client endpoint
+
 *Server*
 
 The server runs a basic setup with Express and Jade, and by default makes a websocket connection to all clients. For convenience, underscore and bunyan are also installed.
