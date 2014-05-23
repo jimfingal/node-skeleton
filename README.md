@@ -13,7 +13,7 @@ This command will:
 * Run the local version of bower to install the client bower modules
 * Run the r.js optimizer on the main client endpoint
 
-*Server*
+### Server
 
 The server runs a basic setup with Express and Jade, and by default makes a websocket connection to all clients. For convenience, underscore and bunyan are also installed.
 
@@ -21,13 +21,13 @@ To run the server:
 
     node web.js
 
-*Client*
+### Client
 
 The client is configured with require.js, has a websocket client, and comes installed with jquery, jquery-ui, bootstrap, and underscore.
 
 By default, all the client does is establish a connnection, receive pings from the server, and prints them to the user in a terminal-like visualization.
 
-*Deployment*
+### Deployment
 
 The app should be easy to deploy to heroku. If you are using heroku-accounts, configure your account for the repository:
 
