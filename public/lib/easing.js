@@ -1,5 +1,5 @@
 define(function() {
-    "use strict"
+    "use strict";
     // time, begin, change, duration
 
     var easing_functions = {

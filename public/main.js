@@ -1,4 +1,4 @@
-requirejs(['socket.io', 'jquery', 'jquery-ui', 'bootstrap',],
+requirejs(['socket.io', 'jquery', 'jquery-ui', 'bootstrap'],
   function(io, $) {
     var loc = window.location;
     var url = location.protocol + '//' + location.hostname + ':' + location.port;
@@ -9,11 +9,11 @@ requirejs(['socket.io', 'jquery', 'jquery-ui', 'bootstrap',],
       $('#term').prepend("<p>" + message + "</p>");
     };
 
-    socket.on('disconnect', function () {
+    socket.on('disconnect', function() {
      processMessage('Socket disconnected.');
     });
 
-    socket.on('connect', function () {
+    socket.on('connect', function() {
      processMessage('Socket connected.');
     });
 

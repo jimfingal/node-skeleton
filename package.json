@@ -6,11 +6,11 @@
   "dependencies": {
     "bower": "^1.3.3",
     "bunyan": "^0.22.3",
-    "express": "~3.3.4",
+    "express": "^4.4.5",
     "jade": "~0.34.0",
     "requirejs": "2.1.11",
-    "socket.io": "latest",
-    "underscore": "latest"
+    "socket.io": "^1.0.6",
+    "underscore": "^1.6.0"
   },
   "engines": {
     "node": "0.10.26",
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "node_modules/.bin/bower install && node node_modules/.bin/r.js -o requirebuild.js"
+    "postinstall": "node_modules/.bin/bower install"
   },
   "repository": {
     "type": "git",
